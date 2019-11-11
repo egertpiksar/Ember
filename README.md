@@ -1,11 +1,12 @@
+# Egert Piksar 
+
 # Ember
 https://emberjs.com 
 
-# Egert Piksar 
 
-# kodutöö kirjeldus
+# Kodutöö kirjeldus
 
-Näidis rakendus - veebileht
+Näidis rakendus- veebileht
 
 ## Installation
 
