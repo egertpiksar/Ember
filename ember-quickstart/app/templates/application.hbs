@@ -1,0 +1,134 @@
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<script>
+
+function scrollToAbout(){
+  document.getElementById('about').scrollIntoView({ behavior: 'smooth', block: 'end' });
+}
+
+function scrollToPhotos(){
+  document.getElementById('photos').scrollIntoView({ behavior: 'smooth', block: 'end' });
+}
+
+function scrollToContact(){
+  document.getElementById('contact').scrollIntoView({ behavior: 'smooth', block: 'end' });
+}
+  
+</script>
+
+<div class="container">
+  <div class="menu">
+        {{#link-to "index"}}
+          <h1>
+            KALLE PHOTOGRAPHY
+          </h1>
+        {{/link-to}}
+        <div class="links">
+          <h1 onClick="scrollToAbout()" >About me</h1>
+          <h1 onClick="scrollToPhotos()">Photos</h1>
+          <h1 onClick="scrollToContact()">Contact</h1>
+        </div>
+      </div>
+  <div class="body">
+    {{outlet}}
+    <div class="jumbo">
+      <h2 class="name">I'm Kalle Kivikõva</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+
+    <div class="content">
+      <div class="myTitle">
+        <h2 class="">My Name</h2>
+        <hr style="width:200px; margin-top:20px;">
+          <p style="color:#757575; padding-top:20px;">Some text about me. Some text about me. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+        ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
+        adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </p>
+      </div>
+      <h3 class="w3-padding-16 w3-text-light-grey" style="margin-top: 200px;">My Skills</h3>
+      <p class="w3-wide" style="color: #fff">Photography</p>
+      <div class="w3-white">
+        <div class="w3-dark-grey" style="height:28px;width:95%"></div>
+      </div>
+      <p class="w3-wide" style="color: #fff; margin-top: 15px;">Web Design</p>
+      <div class="w3-white">
+        <div class="w3-dark-grey" style="height:28px;width:85%"></div>
+      </div>
+      <p class="w3-wide" style="color: #fff; margin-top: 15px;">Photoshop</p>
+      <div class="w3-white">
+        <div class="w3-dark-grey" style="height:28px;width:80%"></div>
+      </div>
+
+      <div id="about" class="w3-row w3-center w3-padding-16 w3-section w3-light-grey" style="margin-top:200px!important;">
+            <div class="w3-quarter w3-section">
+              <span class="w3-xlarge">11+</span><br>
+              Partners
+            </div>
+            <div class="w3-quarter w3-section">
+              <span class="w3-xlarge">55+</span><br>
+              Projects Done
+            </div>
+            <div class="w3-quarter w3-section">
+              <span class="w3-xlarge">89+</span><br>
+              Happy Clients
+            </div>
+            <div class="w3-quarter w3-section">
+              <span class="w3-xlarge">150+</span><br>
+              Meetings
+            </div>
+        </div>
+
+         <!-- Portfolio Section -->
+        <div class="w3-padding-64 w3-content" style="margin-top:200px;" id="photos">
+          <h2 class="w3-text-light-grey">My Photos</h2>
+          <hr style="width:200px" class="w3-opacity">
+
+          <!-- Grid for photos -->
+          <div class="w3-row-padding" style="margin:0 -16px">
+            <div class="w3-half">
+              <img src="../assets/images/wedding.jpg" style="width:100%">
+              <img src="../assets/images/rocks.jpg" style="width:100%; padding: 15px 0 15px 0">
+              <img src="../assets/images/sailboat.jpg" style="width:100%">
+            </div>
+
+            <div class="w3-half">
+              <img src="../assets/images/underwater.jpg" style="width:100%">
+              <img src="../assets/images/chef.jpg" style="width:100%; padding: 15px 0 15px 0">
+              <img src="../assets/images/wedding.jpg" style="width:100%">
+              <img src="../assets/images/p6.jpg" style="width:100%; padding-top: 15px;">
+            </div>
+          <!-- End photo grid -->
+          </div>
+        <!-- End Portfolio Section -->
+        </div>
+      <!-- Contact Section -->
+      <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+        <h2 class="w3-text-light-grey" style="margin-top:200px;">Contact Me</h2>
+        <hr style="width:200px" class="w3-opacity">
+
+        <div class="w3-section">
+          <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Estonia</p>
+          <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +372 56565656</p>
+          <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> E-mail: mail@mail.com</p>
+        </div>
+
+
+        <p style="margin-top:100px;">Lets get in touch. Send me a message:</p>
+        <form class="form">
+          <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name=""></p>
+          <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name=""></p>
+          <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name=""></p>
+          <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name=""></p>
+          <p>
+            <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+              SEND MESSAGE
+            </button>
+          </p>
+        </form>
+      <!-- End Contact Section -->
+      </div>
+    </div>
+  </div>
+</div>
